@@ -8,10 +8,13 @@ namespace Functies
 {
     class Program
     {
+        public static int intResult;
+        public static string strAdjustMultiplier;
+
         static void Main(string[] args)
         {
             Console.WriteLine("Dit is een uitleg over functies, typ iets in...");
-            int intResult = Program.ShowConsoleInfo(Console.ReadLine(), 10);
+            intResult = Program.ShowConsoleInfo(Console.ReadLine(), 10);
             Console.WriteLine("De uitkomst van de functie is : " + intResult);
             Console.ReadLine();
         }
@@ -20,7 +23,7 @@ namespace Functies
         {
             Console.WriteLine("U heeft ingetikt : " + strResult + " het getal is : " + intGetal);
             Console.WriteLine("Wilt u de multiplier aanpassen ? (y/n)");
-            string strAdjustMultiplier = Console.ReadLine();
+            strAdjustMultiplier = Console.ReadLine();
 
             if (strAdjustMultiplier == "y")
             {
