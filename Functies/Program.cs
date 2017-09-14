@@ -13,8 +13,9 @@ namespace Functies
 
         static void Main(string[] args)
         {
+            
             Console.WriteLine("Dit is een uitleg over functies, typ iets in...");
-            intResult = Program.ShowConsoleInfo(Console.ReadLine(), 10);
+            Program.intResult = Program.ShowConsoleInfo(Console.ReadLine(), 10);
             Console.WriteLine("De uitkomst van de functie is : " + intResult);
             Console.ReadLine();
         }
